@@ -1,174 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Asian Fuji Cuisine</title>
-
-<style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#f5f5f5;
-}
-
-header{
-background:#b22222;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-background:url("hero.jpg") center/cover;
-color:white;
-text-align:center;
-padding:120px 20px;
-}
-
-.hero h1{
-font-size:50px;
-margin-bottom:10px;
-}
-
-.order-btn{
-background:yellow;
-color:black;
-padding:15px 30px;
-font-size:18px;
-text-decoration:none;
-border-radius:5px;
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-background:white;
-margin-top:20px;
-}
-
-h2{
-color:#b22222;
-}
-
-.menu-item{
-display:flex;
-justify-content:space-between;
-padding:8px 0;
-border-bottom:1px solid #ddd;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#eee;
-margin-top:40px;
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asian Fuji Cuisine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f8f8f8;
+    }
+    header {
+      background: #c0392b;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero p a {
+      background: #f1c40f;
+      color: #c0392b;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #c0392b;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .menu-item {
+      text-align: center;
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .menu-item h4 {
+      margin: 10px 0 5px;
+    }
+    .contact p {
+      margin: 6px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
-
-<h1>Asian Fuji Cuisine</h1>
-
-<nav>
-<a href="#about">About</a>
-<a href="#menu">Menu</a>
-<a href="#contact">Contact</a>
-</nav>
-
+  <h1>Asian Fuji Cuisine</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<div class="hero">
-
-<h1>Authentic Asian Cuisine</h1>
-
-<p>Fresh • Delicious • Takeout & Delivery</p>
-
-<a class="order-btn" href="#">Order Online</a>
-
-</div>
+<section class="hero">
+  <h1>Delicious Asian Flavors</h1>
+  <p><a href="#menu">See Our Menu</a></p>
+</section>
 
 <section id="about">
-
-<h2>About Us</h2>
-
-<p>
-Welcome to Asian Fuji Cuisine. We serve delicious Asian dishes
-including fresh sushi, noodles, dumplings, and stir‑fry favorites.
-Perfect for dine‑in, takeout, and delivery.
-</p>
-
+  <h2>About Us</h2>
+  <p>Welcome to Asian Fuji Cuisine — where fresh Asian favorites meet authentic flavors! Enjoy classic dishes like noodle bowls, dumplings, fried rice, and more. Perfect for dine‑in, takeout, or delivery. Our menu is crafted to satisfy every craving and mood.</p>
 </section>
 
 <section id="menu">
+  <h2>Our Popular Dishes</h2>
+  <div class="menu-grid">
+    
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Dish 1">
+      <h4>General Tso’s Chicken</h4>
+      <p>$12.99</p>
+    </div>
 
-<h2>Popular Menu</h2>
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Dish 2">
+      <h4>Vegetable Fried Rice</h4>
+      <p>$9.49</p>
+    </div>
 
-<div class="menu-item">
-<span>Crab Rangoon (8)</span>
-<span>$7.25</span>
-</div>
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Dish 3">
+      <h4>Sushi Platter</h4>
+      <p>$14.99</p>
+    </div>
 
-<div class="menu-item">
-<span>General Tso's Chicken</span>
-<span>$12.95</span>
-</div>
+    <div class="menu-item">
+      <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Dish 4">
+      <h4>Steamed Dumplings</h4>
+      <p>$8.99</p>
+    </div>
 
-<div class="menu-item">
-<span>Beef Lo Mein</span>
-<span>$11.95</span>
-</div>
-
-<div class="menu-item">
-<span>Sweet & Sour Chicken</span>
-<span>$12.50</span>
-</div>
-
-<div class="menu-item">
-<span>Vegetable Fried Rice</span>
-<span>$9.95</span>
-</div>
-
+  </div>
 </section>
 
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>📍 123 Main Street, Mechanicsville VA</p>
-
-<p>📞 (804) 000‑0000</p>
-
-<p>Hours:</p>
-
-<p>Mon–Thu: 11:00 AM – 9:30 PM</p>
-
-<p>Fri–Sat: 11:00 AM – 10:30 PM</p>
-
-<p>Sun: 12:00 PM – 9:30 PM</p>
-
+<section id="contact" class="contact">
+  <h2>Contact & Hours</h2>
+  <p>📍 123 Example Street, Your City, VA</p>
+  <p>📞 (555) 123‑4567</p>
+  <p><strong>Hours:</strong></p>
+  <p>Monday – Thursday: 11:00 AM – 9:30 PM</p>
+  <p>Friday – Saturday: 11:00 AM – 10:30 PM</p>
+  <p>Sunday: 12:00 PM – 9:30 PM</p>
 </section>
 
 <footer>
-
-© 2026 Asian Fuji Cuisine
-
+  &copy; 2026 Asian Fuji Cuisine
 </footer>
 
 </body>
-
 </html>
